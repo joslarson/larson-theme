@@ -4,6 +4,6 @@
 	<title>GitHub</title>
 </head>
 <body>
-<h1>Nice work!</h1>
+<h1>Nice work! 2</h1>
 </body>
 </html>
