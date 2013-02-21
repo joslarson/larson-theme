@@ -43,9 +43,21 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 235.0,
+		"height": 375.0,
 		"selected_items":
 		[
+			[
+				"tab",
+				"View: Toggle Tabs"
+			],
+			[
+				"git",
+				"Github: Open File"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
 			[
 				"save",
 				"Project: Save As"
@@ -67,16 +79,8 @@
 				"SublimeLinter: Disable Linting"
 			],
 			[
-				"tab",
-				"View: Toggle Tabs"
-			],
-			[
 				"pret",
 				"HTMLPrettify: Prettify"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
 			],
 			[
 				"close",
@@ -175,7 +179,7 @@
 				"View: Toggle Menu"
 			]
 		],
-		"width": 386.0
+		"width": 498.0
 	},
 	"console":
 	{
@@ -192,6 +196,7 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/wp/wp-content/themes/larson-theme/archive-custom_type.php",
 		"/C/xampp/php/php.ini",
 		"/C/Google Drive/Public HTML/style.css",
 		"/C/Google Drive/Public HTML/index.html",
@@ -374,7 +379,7 @@
 		[
 			[
 				"",
-				"/C/Google Drive/Public HTML/DrivePublic.sublime-project"
+				"/C/Google Drive/School/Class Notes/ClassNotes.sublime-project"
 			],
 			[
 				"ja",
@@ -385,7 +390,7 @@
 	},
 	"show_minimap": true,
 	"show_open_files": true,
-	"show_tabs": true,
+	"show_tabs": false,
 	"side_bar_visible": true,
 	"side_bar_width": 235.0,
 	"status_bar_visible": true
