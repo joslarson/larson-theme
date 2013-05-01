@@ -26,7 +26,7 @@ $(document).ready(function() {
 	h1LongWidth = $('header h1').text(h1Long).outerWidth();
 	h1ShortWidth = $('header h1').text(h1Short).outerWidth();
 	navWidth = $('header nav').outerWidth(true);
-	followWidth = $('header .follow').outerWidth(true);
+	followWidth = $('header .dropdown').outerWidth(true);
 	menuBtnWidth = $('header svg#menu_btn').outerWidth(true);
 
 	function response(size) {
