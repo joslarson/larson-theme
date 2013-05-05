@@ -1,44 +1,77 @@
-* {
-  margin: 0;
-  font-family: "Open Sans", sans-serif; }
+html {
+  font-size: 78.125%; }
 
 body {
-  /*background: no-repeat url('../img/head.jpg') center 0;*/ }
+  margin: 0;
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  background: #fafafa; }
+
+body:before {
+  content: '';
+  border-top: solid 0.4rem #473ed5;
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: #fafafa;
+  height: 3.6rem; }
+
+header.site-header .intro {
+  max-width: 114.0rem;
+  margin: 1.0rem auto 0.0rem;
+  height: 32.7rem;
+  background: url("../img/intro-bg.png") center 3.9rem no-repeat;
+  background-size: 114.0rem auto;
+  background-attachment: fixed; }
 
 header.site-header {
-  background: white;
-  /*was .92*/
   color: white;
-  position: fixed;
-  top: 0;
   width: 100%;
-  padding: 30px 0;
-  -webkit-transition: padding .5s; }
+  padding: 3.0rem 0;
+  -webkit-transition: padding .5s, width .5s; }
+
+header.site-header .wrapper {
+  padding: 3.0rem 0;
+  background: #fafafa; }
+
+header.site-header .wrapper.stuck {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  position: fixed;
+  top: 0.0rem;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 2.7rem 0;
+  margin-top: 0.4rem;
+  -webkit-transition: background .3s; }
 
 header.site-header .container {
-  max-width: 1100px;
+  max-width: 114.0rem;
   margin: auto;
-  height: 50px; }
+  white-space: nowrap;
+  position: relative;
+  z-index: 20; }
 
 header.site-header h1 {
   font-weight: 300;
   font-style: italic;
   text-transform: uppercase;
-  font-size: 25px;
-  line-height: 49px;
+  font-size: 2.5rem;
+  line-height: 4.9rem;
   float: left;
   text-align: center;
   color: #444;
-  letter-spacing: 2.9px;
-  padding: 0 17px 0 20px;
+  letter-spacing: 0.29rem;
+  padding: 0 1.7rem 0 2.0rem;
   margin: 0;
-  height: 49px;
+  height: 4.9rem;
   overflow: hidden; }
 
 header.site-header nav {
   float: left;
-  border-left: 1px solid #CCCCCC;
-  padding-left: 20px; }
+  border-left: 0.1rem solid #CCCCCC;
+  padding-left: 2.0rem; }
 
 header.site-header nav ul {
   list-style: none;
@@ -49,26 +82,26 @@ header.site-header nav ul li {
   float: left; }
 
 header.site-header nav ul li a {
-  font-size: 19px;
+  font-size: 1.9rem;
   font-weight: 300;
   text-transform: uppercase;
-  margin-right: 15px;
+  margin-right: 1.5rem;
   font-style: italic;
-  line-height: 50px;
+  line-height: 5.0rem;
   display: inline-block; }
 
 header.site-header nav ul li a:hover {
-  border-bottom: solid 3px #cccccc;
-  line-height: 44px;
-  padding-top: 3px;
+  border-bottom: solid 0.3rem #cccccc;
+  line-height: 4.4rem;
+  padding-top: 0.3rem;
   text-decoration: none;
   color: #444444; }
 
 header.site-header nav ul li.active a {
   font-weight: 400;
-  border-bottom: solid 3px #3f35d6;
-  line-height: 44px;
-  padding-top: 3px; }
+  border-bottom: solid 0.3rem #473ed5;
+  line-height: 4.4rem;
+  padding-top: 0.3rem; }
 
 header.site-header nav ul li a {
   text-decoration: none;
@@ -76,13 +109,29 @@ header.site-header nav ul li a {
 
 header.site-header svg#logo {
   float: left;
-  margin: 0 -7px; }
+  margin: 0 -0.7rem;
+  width: 5.0rem;
+  height: 5.0rem; }
 
 header.site-header svg#menu_btn {
   display: none; }
 
 header.site-header .dropdown {
-  float: right; }
+  float: right;
+  margin-top: 0.6rem; }
+
+.btn {
+  font-size: 1.4rem;
+  display: inline-block;
+  line-height: 3.6rem;
+  background: #473ed5;
+  color: white;
+  text-decoration: none;
+  padding: 0 1.2rem;
+  border-radius: 0.2rem; }
+
+span.icon {
+  font-family: "FontAwseome"; }
 
 section.main-content {
   width: 70%; }
@@ -90,86 +139,83 @@ section.main-content {
 section, aside {
   min-height: 1000px; }
 
-/*Medium CSS*/
-/*Small CSS*/
-body.small header.site-header h1 {
+/* break_h1_1 CSS */
+/* break_h1_2 CSS */
+html.break_h1_2 header.site-header h1 {
   display: none; }
-body.small header.site-header nav {
-  margin-left: 20px; }
+html.break_h1_2 header.site-header nav {
+  margin-left: 2rem; }
 
-/*Mobile CSS*/
-body.mobile header.site-header .dropdown {
+/* mobile CSS */
+html.mobile header.site-header .dropdown {
   display: none; }
-body.mobile header.site-header #menu_btn {
-  display: block;
-  margin: 0 -10px; }
-body.mobile header.site-header {
-  padding: 5px 0; }
-body.mobile header.site-header .container {
-  margin: 0 5px; }
-body.mobile header.site-header h1 {
+html.mobile header.site-header .wrapper {
+  padding: 0.5rem 0; }
+html.mobile header.site-header .container {
+  position: relative; }
+html.mobile header.site-header h1 {
   display: block;
   text-align: center;
   margin: 0;
   float: none;
-  width: auto; }
-body.mobile header.site-header nav {
+  width: auto;
+  padding: 0 2.4rem 0 3.7rem; }
+html.mobile header.site-header nav {
   position: absolute;
-  right: 0;
-  margin-top: 6px;
+  right: -2.0rem;
+  top: 5.4rem;
   border: none; }
-body.mobile header.site-header nav ul {
+html.mobile header.site-header nav ul {
   background: #151515;
-  padding: 0 0 5px 0;
-  border-radius: 0 0 0 10px; }
-body.mobile header.site-header nav ul li {
+  padding: 0 0 0.5rem 0;
+  border-radius: 0 0 0 1.0rem; }
+html.mobile header.site-header nav ul li {
   float: none; }
-body.mobile header.site-header nav ul li a {
-  font-size: 25px;
-  border-bottom: 1px solid #2a2a2a;
-  padding: 10px 18px;
+html.mobile header.site-header nav ul li a {
+  font-size: 2.5rem;
+  border-bottom: 0.1rem solid #2a2a2a;
+  padding: 1.0rem 1.8rem;
   float: none;
   margin: 0;
-  line-height: 35px;
+  line-height: 3.5rem;
   display: block; }
-body.mobile header.site-header nav ul li.active a {
-  font-size: 25px;
-  line-height: 35px; }
-body.mobile header.site-header nav ul li.active a {
+html.mobile header.site-header nav ul li.active a {
+  font-size: 2.5rem;
+  line-height: 3.5rem; }
+html.mobile header.site-header nav ul li.active a {
   font-weight: 300;
-  border-bottom: 1px solid #2a2a2a;
-  line-height: 40px;
-  padding: 10px 18px; }
-body.mobile header.site-header nav ul li:last-child a {
+  border-bottom: 0.1rem solid #2a2a2a;
+  line-height: 4.0rem;
+  padding: 1.0rem 1.8rem; }
+html.mobile header.site-header nav ul li:last-child a {
   border-bottom: none; }
-body.mobile header.site-header nav ul li a {
+html.mobile header.site-header nav ul li a {
   text-decoration: none;
   color: white; }
-body.mobile header.site-header svg#logo {
-  float: left;
-  margin-left: 0; }
-body.mobile header.site-header svg#menu_btn {
+html.mobile header.site-header svg#logo {
+  position: absolute;
+  left: -0.5rem; }
+html.mobile header.site-header svg#menu_btn {
   display: block;
-  float: right;
-  margin-right: -2px; }
-body.mobile header.site-header svg#menu_btn:hover {
+  position: absolute;
+  right: -1.5rem; }
+html.mobile header.site-header svg#menu_btn:hover {
   cursor: pointer; }
-body.mobile header.site-header .follow {
+html.mobile header.site-header .follow {
   display: none; }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 71.875%; } }
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 62.5%; } }
+@media screen and (max-width: 118rem) {
   header.site-header .container {
-    margin: 0 20px; } }
-@media screen and (max-width: 720px) {
-  header.site-header {
-    padding: 15px 0; } }
-@media screen and (max-height: 720px) {
-  header.site-header {
-    padding: 15px 0; } }
-@media screen and (max-height: 480px) {
-  header.site-header {
-    padding: 5px 0; } }
-@media screen and (max-height: 325px) {
-  header.site-header {
-    padding: 5px 0;
-    position: absolute; } }
+    margin: 0 2.0rem; }
+
+  header.site-header .intro {
+    margin: 1.0rem 2.0rem 0.0rem; } }
+@media screen and (max-width: 72rem) {
+  header.site-header .wrapper {
+    padding: 1.5rem 0; } }
