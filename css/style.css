@@ -1,5 +1,5 @@
 html {
-  font-size: 78.125%; }
+  font-size: 88.125%; }
 
 body {
   margin: 0;
@@ -28,15 +28,14 @@ header.site-header .intro {
 header.site-header {
   color: white;
   width: 100%;
-  padding: 3.0rem 0;
-  -webkit-transition: padding .5s, width .5s; }
+  padding: 3.0rem 0; }
 
 header.site-header .wrapper {
   padding: 3.0rem 0;
   background: #fafafa; }
 
 header.site-header .wrapper.stuck {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   width: 100%;
   position: fixed;
   top: 0.0rem;
@@ -145,12 +144,15 @@ html.break_h1_2 header.site-header h1 {
   display: none; }
 html.break_h1_2 header.site-header nav {
   margin-left: 2rem; }
+html.break_h1_2 header.site-header .wrapper {
+  padding: 1.7rem 0; }
 
 /* mobile CSS */
 html.mobile header.site-header .dropdown {
   display: none; }
 html.mobile header.site-header .wrapper {
-  padding: 0.5rem 0; }
+  padding: 0.5rem 0;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25); }
 html.mobile header.site-header .container {
   position: relative; }
 html.mobile header.site-header h1 {
@@ -204,6 +206,9 @@ html.mobile header.site-header svg#menu_btn:hover {
 html.mobile header.site-header .follow {
   display: none; }
 
+@media screen and (max-width: 1800px) {
+  html {
+    font-size: 78.125%; } }
 @media screen and (max-width: 1600px) {
   html {
     font-size: 71.875%; } }

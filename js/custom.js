@@ -91,7 +91,7 @@ $(document).ready(function() {
 	}
 
 	function fixedNav() {
-		if( $(window).scrollTop() >= rem2px(36.5) ) {
+		if( $(window).scrollTop() >= rem2px(36.2) ) {
 			$('.site-header .wrapper').addClass('stuck');
 		} else {
 			$('.site-header .wrapper').removeClass('stuck');

@@ -47,16 +47,24 @@
 		"selected_items":
 		[
 			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
 				"tab",
 				"View: Toggle Tabs"
 			],
 			[
 				"git",
 				"Github: Open File"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
 			],
 			[
 				"save",
@@ -93,10 +101,6 @@
 			[
 				"clos",
 				"Project: Close"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
 			],
 			[
 				"pack",
@@ -196,6 +200,9 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Les/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Les/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Les/Projects/Dev/GitHub/larson-theme/larson-theme.sublime-project",
 		"/C/xampp/htdocs/wp/wp-content/themes/larson-theme/archive-custom_type.php",
 		"/C/xampp/php/php.ini",
 		"/C/Google Drive/Public HTML/style.css",
@@ -253,6 +260,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"scroll",
 			"[0-92]+G",
 			"[0-92]+M",
 			"max",
@@ -390,7 +398,7 @@
 	},
 	"show_minimap": true,
 	"show_open_files": true,
-	"show_tabs": false,
+	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 235.0,
 	"status_bar_visible": true
