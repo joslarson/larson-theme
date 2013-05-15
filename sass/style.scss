@@ -1,14 +1,14 @@
 //////////////////////////////////
 // Colors
 $accent-color: #473ed5;
-$bg-color: rgb(250, 250, 250);
+$bg-color: white;
 
 //////////////////////////////////
 // Widths
 
 html { font-size: 88.125%; } 
 body { margin: 0; font-size: 1.4rem; font-family: "Open Sans", sans-serif; background: $bg-color; }
-body:before { content: ''; border-top: solid 0.4rem $accent-color; display: block; position: fixed; width: 100%; z-index: 10; background: $bg-color; height: 3.6rem; };
+body:before { content: ''; display: block; position: fixed; width: 100%; z-index: 10; background: $bg-color; height: 4.0rem; };
 
 header {   }
 header.site-header .intro {
@@ -22,7 +22,7 @@ header.site-header .intro {
 
 header.site-header { color: white; width: 100%; padding: 3.0rem 0; }
 header.site-header .wrapper { padding: 3.0rem 0; background: $bg-color; }
-header.site-header .wrapper.stuck { box-shadow: 0 0 0.5rem rgba(0,0,0,.25); width: 100%; position: fixed; top: 0.0rem; z-index: 20; background: rgba(255,255,255, .92); padding: 2.7rem 0; margin-top: 0.4rem; -webkit-transition: background .3s; }
+header.site-header .wrapper.stuck { border-bottom: 0.4rem solid rgba(0,0,0,.10); width: 100%; position: fixed; top: 0.0rem; z-index: 20; background: rgba(255,255,255, .92); padding: 1.9rem 0; -webkit-transition: background .3s; }
 header.site-header .container { max-width: 114.0rem; margin: auto; white-space: nowrap; position: relative; z-index: 20;  }
 header.site-header h1 { font-weight: 300; font-style: italic; text-transform: uppercase; font-size: 2.5rem; line-height: 4.9rem; float: left; text-align: center; color: #444; letter-spacing: 0.29rem; padding: 0 1.7rem 0 2.0rem; margin: 0; height: 4.9rem; overflow: hidden;}
 header.site-header nav { float: left; border-left: 0.1rem solid #CCCCCC; padding-left: 2.0rem; }
@@ -87,9 +87,9 @@ html.mobile {
     html { font-size: 62.5%; }
 }
 
-@media screen and (max-width: 118.0rem) {
-    header.site-header .container { margin: 0 2.0rem; }
-    header.site-header .intro { margin: 1.0rem 2.0rem 0.0rem; }
+@media screen and (max-width: 122.0rem) {
+    header.site-header .container { margin: 0 4.0rem; }
+    header.site-header .intro { margin: 1.0rem 4.0rem 0.0rem; }
 }
 
 @media screen and (max-width: 72.0rem) {
