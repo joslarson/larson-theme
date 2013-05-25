@@ -34,7 +34,7 @@
 
 			<nav title="Main Menu">
 				<ul>
-					<li class="active"><a href="">Blog</a></li>
+					<li class="active"><a href="">Home</a></li>
 					<li><a href="">Music</a></li>
 					<li><a href="">Design</a></li>
 					<li><a href="">Code</a></li>

@@ -19,7 +19,7 @@ function setFontSize() {
 	$('#567').remove();
 }
 
-$(document).ready(function() {
+$(window).bind("load", function() {
 	setFontSize();
 	// 
 	h1Long = 'Joseph Larson';
@@ -63,6 +63,7 @@ $(document).ready(function() {
 		var break_follow_1 = containerWidth > rem2px(logoWidth + h1ShortWidth + navWidth + followShortWidth + 0.8);
 		var break_h1_2 = containerWidth > rem2px(logoWidth + navWidth + followLongWidth + 2.3);
 		var break_follow_2 = containerWidth > rem2px( logoWidth + followShortWidth + navWidth + 2.3);
+		var break_margin = containerWidth > rem2px( logoWidth + followShortWidth + navWidth + 0.3 );
 
 		if (fullsize) {
 			$('header h1').text(h1Long);
@@ -72,11 +73,12 @@ $(document).ready(function() {
 			$('header h1').text(h1Short);
 			$('header .dropdown a').html(followLong);
 			response('break_h1_1');
-		} else if (break_follow_1) {
+		} else if (break_follow_1 && $('body > header .container').css('margin-left') == '40px') {
 			$('header h1').text(h1Short);
 			response('break_h1_1 break_follow_1');
 			$('header .dropdown a').html(followShort);
 		} else if (break_h1_2) {
+			console.log($('body > header .container').css('margin-left'));
 			$('header h1').text(h1Short);
 			response('break_h1_1 break_follow_1 break_h1_2');
 			$('header .dropdown a').html(followLong);
@@ -85,13 +87,15 @@ $(document).ready(function() {
 			response('break_h1_1 break_follow_1 break_h1_2 break_follow_2');
 			$('header .dropdown a').html(followShort);
 		} else {
-			response('break_h1_1 break_follow_1 break_h1_2 break_follow_1 mobile');
+			response('break_h1_1 break_follow_1 break_h1_2 break_follow_2 mobile');
 			$('header h1').text(h1Long);
 		}
 	}
 
 	function fixedNav() {
-		if( $(window).scrollTop() >= rem2px(37.6) ) {
+		intro_offset = $('.site-header .intro').offset()['top'];
+		intro_height = $('.site-header .intro').height();
+		if( $(window).scrollTop() >= intro_offset + intro_height ) {
 			$('.site-header .wrapper').addClass('stuck');
 		} else {
 			$('.site-header .wrapper').removeClass('stuck');

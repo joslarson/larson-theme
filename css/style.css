@@ -40,7 +40,7 @@ header.site-header .wrapper.stuck {
   top: 0.0rem;
   z-index: 20;
   background: rgba(255, 255, 255, 0.92);
-  padding: 1.9rem 0;
+  padding: 2.5rem 0;
   -webkit-transition: background .3s; }
 
 header.site-header .container {
@@ -138,21 +138,42 @@ section, aside {
 
 /* break_h1_1 CSS */
 /* break_h1_2 CSS */
+html.break_h1_2 body:before {
+  display: none; }
 html.break_h1_2 header.site-header h1 {
   display: none; }
+html.break_h1_2 header.site-header {
+  padding-top: 0; }
 html.break_h1_2 header.site-header nav {
   margin-left: 2rem; }
 html.break_h1_2 header.site-header .wrapper {
   padding: 1.7rem 0; }
+html.break_h1_2 header.site-header .container {
+  margin: 0 2.0rem; }
+html.break_h1_2 header.site-header .intro {
+  margin: 0;
+  background-position: center top; }
 
 /* mobile CSS */
 html.mobile header.site-header .dropdown {
   display: none; }
 html.mobile header.site-header .wrapper {
+  border-bottom: 0.4rem solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0.0rem;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 2.5rem 0; }
+html.mobile header.site-header .wrapper {
   padding: 0.5rem 0;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25); }
+  border-bottom: 0.4rem solid rgba(0, 0, 0, 0.1); }
 html.mobile header.site-header .container {
   position: relative; }
+html.mobile header.site-header .intro {
+  margin: 60px 0 0;
+  background-position: center top;
+  background-attachment: scroll; }
 html.mobile header.site-header h1 {
   display: block;
   text-align: center;
@@ -163,14 +184,15 @@ html.mobile header.site-header h1 {
 html.mobile header.site-header nav {
   position: absolute;
   right: -2.0rem;
-  top: 5.4rem;
+  top: 5.8rem;
   border: none; }
 html.mobile header.site-header nav ul {
   background: #151515;
   padding: 0 0 0.5rem 0;
   border-radius: 0 0 0 1.0rem; }
 html.mobile header.site-header nav ul li {
-  float: none; }
+  float: none;
+  text-align: center; }
 html.mobile header.site-header nav ul li a {
   font-size: 2.5rem;
   border-bottom: 0.1rem solid #2a2a2a;
@@ -206,7 +228,7 @@ html.mobile header.site-header .follow {
 
 @media screen and (max-width: 1800px) {
   html {
-    font-size: 78.125%; } }
+    font-size: 78%; } }
 @media screen and (max-width: 1600px) {
   html {
     font-size: 71.875%; } }
