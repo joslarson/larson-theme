@@ -1,0 +1,27 @@
+@import "vars";
+
+body:before { content: ''; display: block; position: fixed; width: 100%; z-index: 10; background: $bg-color; height: 4.0rem; };
+header.site-header .intro {
+	max-width: 114.0rem;
+	margin: 1.0rem auto 0.0rem; 
+	height: 32.7rem; 
+	background: url('../img/intro-bg.png') center 3.9rem no-repeat; 
+	background-size: 114.0rem auto; 
+	background-attachment: fixed;
+}
+
+header.site-header { color: white; width: 100%; padding: 3.0rem 0 0; }
+header.site-header .wrapper { padding: 3.0rem 0; background: $bg-color; }
+header.site-header .wrapper.stuck { background-clip: padding-box; border-bottom: 0.4rem solid rgba(0,0,0,.14); width: 100%; position: fixed; top: 0.0rem; z-index: 20; background-color: #f8f8f8; padding: 1.8rem 0; -webkit-transition: background .5s; }
+header.site-header .container { max-width: 114.0rem; margin: auto; white-space: nowrap; position: relative; z-index: 20; overflow: hidden;  }
+header.site-header h1 { font-weight: 300; font-style: italic; text-transform: uppercase; font-size: 2.5rem; line-height: 4.9rem; float: left; text-align: center; color: #444; letter-spacing: 0.29rem; padding: 0 1.7rem 0 2.0rem; margin: 0; height: 4.9rem; overflow: hidden;}
+header.site-header nav { float: left; border-left: 0.1rem solid #CCCCCC; padding-left: 2.0rem; }
+header.site-header nav ul { list-style: none; padding:0; margin: 0;  }
+header.site-header nav ul li { float: left; }
+header.site-header nav ul li a { font-size: 1.9rem; font-weight: 300; text-transform: uppercase; margin-right: 1.5rem; font-style: italic; line-height: 5.0rem; display: inline-block;  }
+header.site-header nav ul li a:hover { border-bottom: solid 0.3rem #cccccc; line-height: 4.4rem; padding-top: 0.3rem; text-decoration: none; color: rgb(68, 68, 68); }
+header.site-header nav ul li.active a { font-weight: 400; border-bottom: solid 0.3rem $accent-color; line-height: 4.4rem; padding-top: 0.3rem; }
+header.site-header nav ul li a { text-decoration: none; color: rgb(68, 68, 68); }
+header.site-header svg#logo { float: left; margin: 0 -0.7rem; width: 5.0rem; height: 5.0rem; }
+header.site-header svg#menu_btn { display: none; }
+header.site-header .dropdown { float: right; margin-top: 0.7rem; }

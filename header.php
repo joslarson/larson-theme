@@ -16,7 +16,7 @@
 <body>
 <header class="site-header">
 	<div class="intro"></div>
-	<div class='wrapper'>
+	<div class="wrapper">
 		<div class="container">
 			<?php include('img/logo.svg'); ?>
 			<?php include('img/menu-btn.svg'); ?>
@@ -34,7 +34,7 @@
 
 			<nav title="Main Menu">
 				<ul>
-					<li class="active"><a href="">Home</a></li>
+					<li class="active"><a href="">All</a></li>
 					<li><a href="">Music</a></li>
 					<li><a href="">Design</a></li>
 					<li><a href="">Code</a></li>
@@ -44,3 +44,4 @@
 		</div>
 	</div>
 </header>
+<div class="wrapper">

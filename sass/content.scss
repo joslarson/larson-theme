@@ -1,0 +1,29 @@
+@import "vars";
+
+section.main-content { 
+	margin-left: 29.1rem; position: relative;
+
+	&>header {
+		text-transform: uppercase; margin-bottom: 3.0rem;
+
+		h1 { font-size: 3.0rem; line-height: 3rem; position: absolute; right: 0; top: 0; margin: 0; color: #c6c6c6; font-weight: 300; font-style: italic;  }
+		nav a { 
+			display: inline-block; text-decoration: none; color: #434343; padding: 0; line-height: 3.6rem; margin-right: 2.0rem;
+			&.active { background: $accent-color; color: white; padding: 0 1.0rem; border-radius: 0.2rem; }
+		}
+	}
+	article {
+		background: #f8f8f8; padding: 4.0rem; border-bottom: solid 0.4rem #d6d6d6; margin-bottom: 4.0rem; border-radius: 0.2rem;
+		.article-type {
+			font-size: 3.3rem; font-weight: 300; color: #d0d0d0; vertical-align: middle; text-transform: uppercase; line-height: 3.4rem;
+
+			i { background: $accent-color; color: white; font-size: 14px; float: left; margin-right: 10px; line-height: 3.4rem; width: 3.4rem; text-align: center; border-radius: 0.2rem;  }
+		}
+		h1 { font-size: 2.7rem; line-height: 1.2; margin: 1.0rem 0; }
+		&.blog { -webkit-column-count: 2; -webkit-column-gap: 7rem; -webkit-column-rule: 1px solid #dadada; }
+		&.twitter { 
+			p { font-size: 2.7rem; line-height: 1.2; margin: -3.4rem 0 0 16.9rem; padding: 0 0 0 2.5rem; border-left: 1px solid #dadada; }
+		}
+
+	}
+}

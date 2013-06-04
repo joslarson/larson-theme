@@ -1,0 +1,32 @@
+@import "vars";
+
+.main-sidebar { width: 25.1rem; float: left; }
+
+.widget {
+	margin-bottom: 2.2rem;
+	h1 { font-size: 1.7rem; text-transform: uppercase; font-weight: 400; color: #bfbfbf; margin: 0 0 1.0rem 0; }
+}
+
+.search-widget { 
+	position: relative; font-size: 1.4rem;
+
+	input[type="text"] { padding-right: 5.2rem; margin: 0; line-height: 1.6rem; border-radius: 0.2rem 0 0 0.2rem; }
+	button { margin: 0; position: absolute; top: 0rem; right: 0rem; width: 4.0rem; border-radius: 0 0.2rem 0.2rem 0; }
+}
+
+.music-widget {
+	.art { background: $accent-color; height: 6.5rem; width: 6.5rem; float: left; border-radius: 0.2rem 0 0 0.2rem; }
+	.info { background: white; height: 6.5rem; margin-left: 6.5rem; border-radius: 0 0.2rem 0.2rem 0; }
+}
+
+.projects-widget {
+	.projects {
+		margin: 0 -1.5rem 0 0; padding: 0; list-style-type: none;
+
+		li { height: 10.0rem; list-style-type: none; padding: 0; margin: 0 1.5rem 1.5rem 0; background: #d0d0d0; position: relative; display: block; border-radius: 0.2rem; }
+		li.small { 
+			box-sizing: border-box; width: 11.8rem; float: left;
+		}
+		li h2 { position: absolute; bottom: 0; right: 0; text-align: right; font-size: 3.0rem; color: #e9e9e9; font-weight: 400; margin: 0 1rem 1rem 0; }
+	}
+}

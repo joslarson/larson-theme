@@ -1,11 +1,11 @@
 <svg id="logo" viewBox="0 0 68 68">
 	<path fill="#d4d2f5" d="M33.455,59.385l-21.27-12.281V22.543l21.27-12.28l21.271,12.28v24.561L33.455,59.385z M51.915,24.165l-18.46-10.657L14.996,24.165V45.48l18.459,10.658l18.46-10.658V24.165z"/>
 	
-	<path fill="#473ed5" d="M46.086,12.658v29.244h13.646v0.379v6v0.08v0.27H38.809V10.504l0.918-1.591l6.365,3.646"/>
+	<path fill="#6145cd" d="M46.086,12.658v29.244h13.646v0.379v6v0.08v0.27H38.809V10.504l0.918-1.591l6.365,3.646"/>
 	<defs>
 		<linearGradient id="logo-gradient" gradientUnits="userSpaceOnUse" x1="7.5562" y1="48.1064" x2="48.1947" y2="15.198">
-			<stop  offset="0" style="stop-color:#473ed5"/>
-			<stop  offset="1" style="stop-color:#29228a"/>
+			<stop  offset="0" style="stop-color:#6145cd"/>
+			<stop  offset="1" style="stop-color:#6b5abf"/>
 		</linearGradient>
 	</defs>
 	

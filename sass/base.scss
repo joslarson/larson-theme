@@ -1,0 +1,22 @@
+@import "vars";
+
+//////////////////////////////////
+// Form Styles 
+input[type=text] { border: none; padding: 1rem 1.2rem; width: 100%; box-sizing: border-box;}
+button, input[type="submit"] { border: none; padding: 1rem 1.2rem; box-sizing: border-box; background: $accent-color; cursor: pointer; }
+button, input[type="submit"], input[type=text] {
+	font-size: 1.4rem;
+	&:focus { outline: none; }
+}
+
+//////////////////////////////////
+// Misc
+html { font-size: 88.125%; -webkit-user-select: yellow; } 
+body { margin: 0; font-size: 1.4rem; font-family: "Open Sans", sans-serif; background: $bg-color; color: #5d5c5c; line-height: 1.7; }
+body>.wrapper { max-width: 114.0rem; margin: auto; padding-top: 2.0rem; }
+body>.wrapper.stuck { margin-top: 11.0rem; }
+
+.btn { font-size: 1.4rem; display: inline-block; line-height: 3.6rem; background: $accent-color; color: white; text-decoration: none; padding: 0 1.2rem; border-radius: 0.2rem; }
+span.icon { font-family: "FontAwseome"; }
+.hidden { position: absolute; left: -500.0rem}
+::selection { background: #FCFFCE; /* Safari */ }

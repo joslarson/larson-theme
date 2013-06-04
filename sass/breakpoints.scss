@@ -1,0 +1,56 @@
+@import "vars";
+
+/* break_h1_1 CSS */
+html.break_h1_1 { 
+}
+
+/* break_h1_2 CSS */
+html.break_h1_2 {
+	body:before { display: none; }
+	header.site-header .wrapper { border-bottom: 0.4rem solid rgba(0,0,0,.14); width: 100%; position: fixed; top: 0.0rem; z-index: 20; background: rgba(255,255,255, .92); padding: 2.5rem 0; }
+	header.site-header .intro { margin: 74px 0 0; background-position: center top; background-attachment: scroll; }
+	header.site-header h1 { display: none; }
+	header.site-header { padding-top: 0; }
+	header.site-header nav { margin-left: 2.0rem } 
+	header.site-header .wrapper { padding: 1.0rem 0; }
+	header.site-header .container { margin: 0 2.0rem; }
+}
+
+/* mobile CSS */
+html.mobile {
+	header.site-header .dropdown { display: none; }
+	header.site-header .wrapper { padding: 0.5rem 0; }
+	header.site-header .container { position: relative; }
+	header.site-header .intro { margin: 60px 0 0; }
+	header.site-header h1 { display: block; text-align: center; margin: 0; float: none; width: auto; padding: 0 2.4rem 0 3.7rem; }
+	header.site-header nav { position: absolute; right: -2.0rem; top: 5.8rem; border: none; }
+	header.site-header nav ul { background: #151515; padding: 0 0 0.5rem 0; border-radius: 0 0 0 1.0rem; }
+	header.site-header nav ul li { float: none; text-align: center; }
+	header.site-header nav ul li a { font-size: 2.5rem; border-bottom: 0.1rem solid #2a2a2a; padding: 1.0rem 1.8rem; float: none; margin: 0; line-height: 3.5rem; display: block; }
+	header.site-header nav ul li.active a { font-size: 2.5rem; line-height: 3.5rem }
+	header.site-header nav ul li.active a { font-weight: 300; border-bottom: 0.1rem solid #2a2a2a; line-height: 4.0rem; padding: 1.0rem 1.8rem; }
+	header.site-header nav ul li:last-child a { border-bottom: none; }
+	header.site-header nav ul li a { text-decoration: none; color: white; }
+	header.site-header svg#logo { position: absolute; left: -0.5rem;}
+	header.site-header svg#menu_btn { display: block; position: absolute; right: -1.5rem; }
+	header.site-header svg#menu_btn:hover { cursor: pointer; }
+	header.site-header .follow { display: none; }
+}
+
+@media screen and (max-width: 1800px) {
+    html { font-size: 78%; }
+}
+
+@media screen and (max-width: 1600px) {
+    html { font-size: 71.875%; }
+}
+
+@media screen and (max-width: 1400px) {
+    html { font-size: 62.5%; }
+}
+
+@media screen and (max-width: 122.0rem) {
+    header.site-header .container { margin: 0 4.0rem; }
+    header.site-header .intro { margin: 1.0rem 4.0rem 0.0rem; }
+    body>.wrapper { margin: 0 4.0rem; }
+}
