@@ -5,7 +5,7 @@
 	</section>
 
 	<section class="widget music-widget">
-		<h1>Recent Music</h1>
+		<h1>Music Player</h1>
 		<div class="art"></div>
 		<div class="info"></div>
 	</section>

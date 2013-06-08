@@ -23,7 +23,7 @@
 			<div class="dropdown">
 				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
 					<i class="icon-twitter"></i> <i class="icon-facebook"></i> 
-						&nbsp;Follow Me&nbsp; 
+						&nbsp;Let's Talk&nbsp; 
 					<i class="icon-angle-down"></i>
 				</a>
 				<!-- <ul class="dropdown-menu">
@@ -32,13 +32,13 @@
 
 			<h1>Joseph Larson</h1>
 
-			<nav title="Main Menu">
+			<nav>
 				<ul>
-					<li class="active"><a href="">All</a></li>
+					<li class="active"><a href="">Activity</a></li>
+					<li><a href="">Tour</a></li>
 					<li><a href="">Music</a></li>
-					<li><a href="">Design</a></li>
-					<li><a href="">Code</a></li>
-					<li><a href="">Misc</a></li>
+					<li><a href="">Press</a></li>
+					<li><a href="">Store</a></li>
 				</ul>
 			</nav>
 		</div>

@@ -24,7 +24,7 @@ $(window).bind("load", function() {
 	// 
 	h1Long = 'Joseph Larson';
 	h1Short = 'Joe Larson';
-	followLong = '<i class="icon-twitter"></i> <i class="icon-facebook"></i> &nbsp;Follow Me&nbsp; <i class="icon-angle-down"></i>';
+	followLong = '<i class="icon-twitter"></i> <i class="icon-facebook"></i> &nbsp;Let\'s Talk&nbsp; <i class="icon-angle-down"></i>';
 	followShort = '<i class="icon-twitter"></i> <i class="icon-facebook"></i> &nbsp;<i class="icon-angle-down"></i>';
 	// Initialize Body Class
 	bodyClass = 'huge';

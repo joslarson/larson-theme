@@ -9,9 +9,9 @@
 			<a class="active" href="">All Sources</a>
 			<a href="">Blog</a>
 			<a href="">Twitter</a>
+			<a href="">YouTube</a>
 			<a href="">SoundCloud</a>
 			<a href="">Flickr</a>
-			<a href="">YouTube</a>
 		</nav>
 	</header>
 
